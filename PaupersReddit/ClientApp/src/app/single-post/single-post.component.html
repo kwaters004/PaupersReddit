@@ -1,0 +1,29 @@
+
+<style>
+  .postBox {
+    border: 2px black solid;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgrey;
+  }
+  .postTitle{
+    margin: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  .postPic{
+    border-radius: 5px;
+  }
+</style>
+
+
+
+<div class="postBox">
+  <a href="https://www.reddit.com{{ thePost.data.permalink }}" target="_blank" >
+    <div class="postTitle">{{ thePost.data.title }}</div>
+    <img class="postPic" src="{{ thePost.data.thumbnail }}" />
+  </a>
+</div>
